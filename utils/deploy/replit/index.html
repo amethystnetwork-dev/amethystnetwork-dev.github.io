@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deploy to Replit</title>
+    <script>
+        window.githubreponame = new URLSearchParams(window.location.search).get('repo')
+        if(window.githubreponame) {
+            window.deploy = () => { window.location = `https://repl.it/github/amethystnetwork-dev/${window.githubreponame}` }
+        } else {
+            alert('ERR! Something is wrong with your URL! Will try to go back to the last page!')
+            window.history.back()
+        }
+    </script>
+</head>
+<body>
+    <p>We have a "Deploy to Replit" button for those people that like Replit ( Railway better ). We do not recommend using Replit.</p>
+
+    <h2>Why Replit bad?</h2>
+
+    <ul>
+        <li>They do not allow unblockers on their site.</li>
+        <li>You WILL get banned if you host a unblocker on Replit</li>
+        <li>It is SLOW</li>
+        <li>Deployment takes a looooong time</li>
+        <li>Replit likes to break itself</li>
+        <li>Railway is faster and also way better</li>
+    </ul>
+
+    <p>You are probably better off going <a onclick="window.history.back()">back to the README</a> and deploying this on Railway.</p>
+
+    <p>Or, watch this video that may or may not help you:</p>
+
+    <a href="https://www.youtube-nocookie.com/embed/H8ZH_mkfPUY?mute=1&autoplay=1"><img height="30px" src="https://img.shields.io/badge/RICKROLL-A6A9AA?style=for-the-badge&logoColor=white"><img></a>
+
+    <h2>The Deploy Button</h2>
+
+    <p>By clicking the below button, I Acknowledge that I have read and understood the above text.</p>
+
+    <a onclick="window.deploy()"><img height="30px" src="https://raw.githubusercontent.com/IDontCodee/Incognito/main/deploy/replit.svg"><img></a>
+</body>
+</html>
