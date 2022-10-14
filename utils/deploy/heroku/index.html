@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deploy to Heroku</title>
+    <link rel="favicon" href="/favicon.ico">
+    <script>
+        window.githubreponame = new URLSearchParams(window.location.search).get('repo')
+        if(window.githubreponame) {
+            window.deploy = () => { window.location = `https://heroku.com/deploy?template=https://github.com/amethystnetwork-dev/${window.githubreponame}` }
+        } else {
+            alert('ERR! Something is wrong with your URL! Will try to go back to the last page!')
+            window.history.back()
+        }
+    </script>
+</head>
+<body>
+    <p>Just a quick little message.</p>
+    
+    <p>Heroku has retired thier free plan. This deploy option will stay for people that want it.</p>
+
+    <a onclick="window.deploy()"><img height="30px" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"><img></a>
+</body>
+</html>
