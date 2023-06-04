@@ -7,7 +7,8 @@
 <body>
     <a href="/docs/about-replit">Click here if you are not redirected.</a>
     <script>
-        window.location = "/docs/about-replit";
+		const repo = new URLSearchParams(window.location.search).get('repo')
+        window.location = `/docs/about-replit${repo ? `?repo=${repo}` : ""}`;
     </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amethyst Network | Discord</title>
+		<link rel="icon" href="/favicon.ico">
+		<link rel="stylesheet" href="invite.css">
+		<script>
+			window.addEventListener("load", async () => {
+				const res = await fetch("https://cdn.jsdelivr.net/gh/amethystnetwork-dev/.github/meta/discord.json");
+				const json = await res.json();
+				window.location = `https://discord.gg/${json.invite_code}`;
+			});
+		</script>
+	</head>
+	<body>
+		<div class="msg">
+			<div class="lds-dual-ring"></div>
+			<p class="info">Fetching latest invite...</p>
+		</div>
+	</body>
+</html>

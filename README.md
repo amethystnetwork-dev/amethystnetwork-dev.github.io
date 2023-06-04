@@ -1,3 +1,3 @@
 # Amethyst Network
 
-Coming soon
+~~Coming soon~~ somewhat finished
